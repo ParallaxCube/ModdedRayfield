@@ -308,6 +308,147 @@ local RayfieldLibrary = {
 			PlaceholderColor = Color3.fromRGB(178, 178, 178)
 		},
 
+
+FIRE = {
+    TextColor = Color3.fromRGB(255, 120, 50),  -- Bright flame-like red-orange
+
+    Background = Color3.fromRGB(30, 15, 0),  -- Deep blackened background, resembling embers
+    Topbar = Color3.fromRGB(255, 80, 0),  -- Fiery orange
+    Shadow = Color3.fromRGB(150, 70, 10),  -- Dark red with a burnt undertone
+
+    NotificationBackground = Color3.fromRGB(255, 140, 50),  -- Fiery yellow-orange
+    NotificationActionsBackground = Color3.fromRGB(255, 105, 50),  -- Slightly darker orange
+
+    TabBackground = Color3.fromRGB(255, 110, 30),  -- Hot red-orange
+    TabStroke = Color3.fromRGB(200, 70, 10),  -- Dark red-brown
+    TabBackgroundSelected = Color3.fromRGB(255, 140, 50),  -- Highlighted orange flame
+    TabTextColor = Color3.fromRGB(255, 60, 30),  -- Fiery red
+    SelectedTabTextColor = Color3.fromRGB(255, 220, 90),  -- Golden yellow for selected tab text
+
+    ElementBackground = Color3.fromRGB(255, 160, 50),  -- Light orange-yellow
+    ElementBackgroundHover = Color3.fromRGB(255, 130, 50),  -- Slightly darker orange
+    SecondaryElementBackground = Color3.fromRGB(255, 140, 50),  -- Same as Element background
+    ElementStroke = Color3.fromRGB(180, 60, 20),  -- Darker red-orange for stroke
+    SecondaryElementStroke = Color3.fromRGB(180, 60, 20),  -- Same stroke color
+
+    SliderBackground = Color3.fromRGB(255, 120, 40),  -- Intense fire-red
+    SliderProgress = Color3.fromRGB(255, 160, 80),  -- Lighter, glowing red
+    SliderStroke = Color3.fromRGB(200, 100, 40),  -- Darker reddish-orange for stroke
+
+    ToggleBackground = Color3.fromRGB(255, 110, 30),  -- Fiery base color for toggle
+    ToggleEnabled = Color3.fromRGB(255, 220, 90),  -- Glowing yellow when enabled
+    ToggleDisabled = Color3.fromRGB(100, 50, 30),  -- Darker, burnt orange when disabled
+    ToggleEnabledStroke = Color3.fromRGB(255, 190, 90),  -- Bright yellow for stroke
+    ToggleDisabledStroke = Color3.fromRGB(120, 60, 40),  -- Subdued red for disabled stroke
+    ToggleEnabledOuterStroke = Color3.fromRGB(255, 160, 50),  -- Brighter outer glow for enabled
+    ToggleDisabledOuterStroke = Color3.fromRGB(150, 80, 50),  -- Darker for disabled toggle outer stroke
+
+    DropdownSelected = Color3.fromRGB(255, 140, 50),  -- Fiery orange selection
+    DropdownUnselected = Color3.fromRGB(255, 100, 30),  -- Slightly duller orange
+
+    InputBackground = Color3.fromRGB(255, 150, 60),  -- Warm glowing orange
+    InputStroke = Color3.fromRGB(180, 70, 20),  -- Dark burnt red for stroke
+    PlaceholderColor = Color3.fromRGB(255, 180, 80),  -- Light golden-orange for placeholders
+}
+
+FIRE = {
+    TextColor = Color3.fromRGB(255, 120, 50),  -- Bright flame-like red-orange
+
+    Background = Color3.fromRGB(30, 15, 0),  -- Deep blackened background, resembling embers
+    Topbar = Color3.fromRGB(255, 80, 0),  -- Fiery orange
+    Shadow = Color3.fromRGB(150, 70, 10),  -- Dark red with a burnt undertone
+
+    NotificationBackground = Color3.fromRGB(255, 140, 50),  -- Fiery yellow-orange
+    NotificationActionsBackground = Color3.fromRGB(255, 105, 50),  -- Slightly darker orange
+
+    TabBackground = Color3.fromRGB(255, 110, 30),  -- Hot red-orange
+    TabStroke = Color3.fromRGB(200, 70, 10),  -- Dark red-brown
+    TabBackgroundSelected = Color3.fromRGB(255, 140, 50),  -- Highlighted orange flame
+    TabTextColor = Color3.fromRGB(255, 60, 30),  -- Fiery red
+    SelectedTabTextColor = Color3.fromRGB(255, 220, 90),  -- Golden yellow for selected tab text
+
+    ElementBackground = Color3.fromRGB(255, 160, 50),  -- Light orange-yellow
+    ElementBackgroundHover = Color3.fromRGB(255, 130, 50),  -- Slightly darker orange
+    SecondaryElementBackground = Color3.fromRGB(255, 140, 50),  -- Same as Element background
+    ElementStroke = Color3.fromRGB(180, 60, 20),  -- Darker red-orange for stroke
+    SecondaryElementStroke = Color3.fromRGB(180, 60, 20),  -- Same stroke color
+
+    SliderBackground = Color3.fromRGB(255, 120, 40),  -- Intense fire-red
+    SliderProgress = Color3.fromRGB(255, 160, 80),  -- Lighter, glowing red
+    SliderStroke = Color3.fromRGB(200, 100, 40),  -- Darker reddish-orange for stroke
+
+    ToggleBackground = Color3.fromRGB(255, 110, 30),  -- Fiery base color for toggle
+    ToggleEnabled = Color3.fromRGB(255, 220, 90),  -- Glowing yellow when enabled
+    ToggleDisabled = Color3.fromRGB(100, 50, 30),  -- Darker, burnt orange when disabled
+    ToggleEnabledStroke = Color3.fromRGB(255, 190, 90),  -- Bright yellow for stroke
+    ToggleDisabledStroke = Color3.fromRGB(120, 60, 40),  -- Subdued red for disabled stroke
+    ToggleEnabledOuterStroke = Color3.fromRGB(255, 160, 50),  -- Brighter outer glow for enabled
+    ToggleDisabledOuterStroke = Color3.fromRGB(150, 80, 50),  -- Darker for disabled toggle outer stroke
+
+    DropdownSelected = Color3.fromRGB(255, 140, 50),  -- Fiery orange selection
+    DropdownUnselected = Color3.fromRGB(255, 100, 30),  -- Slightly duller orange
+
+    InputBackground = Color3.fromRGB(255, 150, 60),  -- Warm glowing orange
+    InputStroke = Color3.fromRGB(180, 70, 20),  -- Dark burnt red for stroke
+    PlaceholderColor = Color3.fromRGB(255, 180, 80),  -- Light golden-orange for placeholders
+}
+
+AshLand = {
+    TextColor = Color3.fromRGB(200, 150, 120),  -- Muted warm gray with a hint of orange, like glowing embers
+
+    Background = Color3.fromRGB(40, 40, 40),  -- Deep charcoal gray, like ash and smoke
+    Topbar = Color3.fromRGB(80, 60, 40),  -- Smoky brown with ashy undertones
+    Shadow = Color3.fromRGB(50, 40, 30),  -- Dark, burnt gray with brownish tint for soft shadow
+
+    NotificationBackground = Color3.fromRGB(180, 130, 100),  -- Ashy orange, subdued
+    NotificationActionsBackground = Color3.fromRGB(150, 110, 80),  -- Darker, muted orange-brown
+
+    TabBackground = Color3.fromRGB(160, 120, 90),  -- Soft ash orange, burned look
+    TabStroke = Color3.fromRGB(130, 100, 70),  -- Ash brown stroke, slightly muted
+    TabBackgroundSelected = Color3.fromRGB(180, 140, 100),  -- Highlighted ashy orange, lighter
+    TabTextColor = Color3.fromRGB(200, 150, 120),  -- Same muted ember color for text
+    SelectedTabTextColor = Color3.fromRGB(220, 180, 140),  -- Light golden ash for selected text
+
+    ElementBackground = Color3.fromRGB(180, 140, 100),  -- Ashen orange with soft gray undertones
+    ElementBackgroundHover = Color3.fromRGB(160, 120, 90),  -- Slightly darker hover effect
+    SecondaryElementBackground = Color3.fromRGB(180, 140, 100),  -- Same as primary element background
+    ElementStroke = Color3.fromRGB(120, 90, 60),  -- Dark brownish-gray stroke
+    SecondaryElementStroke = Color3.fromRGB(120, 90, 60),  -- Same as primary stroke
+
+    SliderBackground = Color3.fromRGB(180, 130, 100),  -- Subdued orange-gray slider background
+    SliderProgress = Color3.fromRGB(220, 180, 130),  -- Lighter, glowing ashy yellow for progress
+    SliderStroke = Color3.fromRGB(160, 120, 90),  -- Darker muted orange-brown for stroke
+
+    ToggleBackground = Color3.fromRGB(160, 120, 90),  -- Soft ashy orange toggle background
+    ToggleEnabled = Color3.fromRGB(200, 160, 120),  -- Warm, subtle glow when enabled
+    ToggleDisabled = Color3.fromRGB(100, 80, 60),  -- Muted, burnt ash color when disabled
+    ToggleEnabledStroke = Color3.fromRGB(220, 180, 140),  -- Soft yellow for enabled stroke
+    ToggleDisabledStroke = Color3.fromRGB(120, 90, 70),  -- Soft grayish brown for disabled stroke
+    ToggleEnabledOuterStroke = Color3.fromRGB(180, 140, 100),  -- Outer glow, slightly brighter
+    ToggleDisabledOuterStroke = Color3.fromRGB(110, 90, 70),  -- Outer stroke for disabled, more subdued
+
+    DropdownSelected = Color3.fromRGB(180, 140, 100),  -- Ashy orange for selected dropdown
+    DropdownUnselected = Color3.fromRGB(160, 120, 90),  -- Slightly darker for unselected
+
+    InputBackground = Color3.fromRGB(200, 160, 120),  -- Light ash orange, soft glow for input
+    InputStroke = Color3.fromRGB(120, 90, 60),  -- Dark grayish-brown stroke for input
+    PlaceholderColor = Color3.fromRGB(180, 140, 100),  -- Light ash with golden tint for placeholder text
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		Ocean = {
 			TextColor = Color3.fromRGB(230, 240, 240),
 
