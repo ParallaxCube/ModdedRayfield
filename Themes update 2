@@ -64,7 +64,7 @@ local function loadWithTimeout(url: string, timeout: number?): ...any
 		task.cancel(timeoutThread)
 	end
 	if not success then
-		warn(`Failed to process {url}: {result}`)
+		warn(`Failed to process your {url}: {result}`)
 	end
 	return if success then result else nil
 end
@@ -4742,6 +4742,16 @@ if CEnabled and Main:FindFirstChild('Notice') then
 	TweenService:Create(Main.Notice.Title, TweenInfo.new(0.5, Enum.EasingStyle.Exponential), {TextTransparency = 0.1}):Play()
 end
 -- AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA why :(
+-- why what goofy ahh?
+-- also why do yall keep using so many  -- just use  
+
+--[[ 
+
+EX TEXT 
+
+]]
+-- like be so fr
+
 --if not useStudio then
 --	task.spawn(loadWithTimeout, "https://raw.githubusercontent.com/ParallaxCube/ModdedRayfield-loadWithTimeout/refs/heads/main/Timeout%20line%20near%203993%20link")
 --end
