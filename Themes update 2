@@ -1,9 +1,9 @@
 --[[
 
 	Rayfield Interface Suite
-	by Sirius
+	by Sirius and modded by IamSkitten
 
-just modded parallaxskitten me but their link is 
+just modded IamSkitten me but their link is 
 
 https://sirius.menu/rayfield
 
@@ -309,47 +309,6 @@ local RayfieldLibrary = {
 		},
 
 
-FIRE = {
-    TextColor = Color3.fromRGB(255, 120, 50),  -- Bright flame-like red-orange
-
-    Background = Color3.fromRGB(30, 15, 0),  -- Deep blackened background, resembling embers
-    Topbar = Color3.fromRGB(255, 80, 0),  -- Fiery orange
-    Shadow = Color3.fromRGB(150, 70, 10),  -- Dark red with a burnt undertone
-
-    NotificationBackground = Color3.fromRGB(255, 140, 50),  -- Fiery yellow-orange
-    NotificationActionsBackground = Color3.fromRGB(255, 105, 50),  -- Slightly darker orange
-
-    TabBackground = Color3.fromRGB(255, 110, 30),  -- Hot red-orange
-    TabStroke = Color3.fromRGB(200, 70, 10),  -- Dark red-brown
-    TabBackgroundSelected = Color3.fromRGB(255, 140, 50),  -- Highlighted orange flame
-    TabTextColor = Color3.fromRGB(255, 60, 30),  -- Fiery red
-    SelectedTabTextColor = Color3.fromRGB(255, 220, 90),  -- Golden yellow for selected tab text
-
-    ElementBackground = Color3.fromRGB(255, 160, 50),  -- Light orange-yellow
-    ElementBackgroundHover = Color3.fromRGB(255, 130, 50),  -- Slightly darker orange
-    SecondaryElementBackground = Color3.fromRGB(255, 140, 50),  -- Same as Element background
-    ElementStroke = Color3.fromRGB(180, 60, 20),  -- Darker red-orange for stroke
-    SecondaryElementStroke = Color3.fromRGB(180, 60, 20),  -- Same stroke color
-
-    SliderBackground = Color3.fromRGB(255, 120, 40),  -- Intense fire-red
-    SliderProgress = Color3.fromRGB(255, 160, 80),  -- Lighter, glowing red
-    SliderStroke = Color3.fromRGB(200, 100, 40),  -- Darker reddish-orange for stroke
-
-    ToggleBackground = Color3.fromRGB(255, 110, 30),  -- Fiery base color for toggle
-    ToggleEnabled = Color3.fromRGB(255, 220, 90),  -- Glowing yellow when enabled
-    ToggleDisabled = Color3.fromRGB(100, 50, 30),  -- Darker, burnt orange when disabled
-    ToggleEnabledStroke = Color3.fromRGB(255, 190, 90),  -- Bright yellow for stroke
-    ToggleDisabledStroke = Color3.fromRGB(120, 60, 40),  -- Subdued red for disabled stroke
-    ToggleEnabledOuterStroke = Color3.fromRGB(255, 160, 50),  -- Brighter outer glow for enabled
-    ToggleDisabledOuterStroke = Color3.fromRGB(150, 80, 50),  -- Darker for disabled toggle outer stroke
-
-    DropdownSelected = Color3.fromRGB(255, 140, 50),  -- Fiery orange selection
-    DropdownUnselected = Color3.fromRGB(255, 100, 30),  -- Slightly duller orange
-
-    InputBackground = Color3.fromRGB(255, 150, 60),  -- Warm glowing orange
-    InputStroke = Color3.fromRGB(180, 70, 20),  -- Dark burnt red for stroke
-    PlaceholderColor = Color3.fromRGB(255, 180, 80),  -- Light golden-orange for placeholders
-}
 
 FIRE = {
     TextColor = Color3.fromRGB(255, 120, 50),  -- Bright flame-like red-orange
@@ -436,16 +395,666 @@ AshLand = {
 }
 
 
+TOXIC = {
+    TextColor = Color3.fromRGB(0, 255, 0),  -- Bright neon green (toxic glow)
+
+    Background = Color3.fromRGB(15, 30, 0),  -- Dark, swampy green, like toxic sludge
+    Topbar = Color3.fromRGB(50, 255, 50),  -- Fluorescent lime green
+    Shadow = Color3.fromRGB(0, 128, 0),  -- Deep, forest-like green, resembling poison
+
+    NotificationBackground = Color3.fromRGB(0, 255, 150),  -- Bright neon greenish yellow
+    NotificationActionsBackground = Color3.fromRGB(0, 230, 100),  -- Duller, toxic yellow-green
+
+    TabBackground = Color3.fromRGB(100, 255, 100),  -- Neon lime green, eye-popping
+    TabStroke = Color3.fromRGB(0, 150, 0),  -- Deep, forest green for the stroke
+    TabBackgroundSelected = Color3.fromRGB(50, 255, 50),  -- Bright lime green for selected tab
+    TabTextColor = Color3.fromRGB(0, 200, 0),  -- Toxic green text
+    SelectedTabTextColor = Color3.fromRGB(0, 255, 100),  -- Lighter yellow-green for selected tab text
+
+    ElementBackground = Color3.fromRGB(0, 255, 50),  -- Fluorescent green
+    ElementBackgroundHover = Color3.fromRGB(50, 255, 50),  -- A bit more yellowish green
+    SecondaryElementBackground = Color3.fromRGB(0, 255, 75),  -- Slightly yellowish green
+    ElementStroke = Color3.fromRGB(0, 128, 0),  -- Dark green for stroke
+    SecondaryElementStroke = Color3.fromRGB(0, 100, 0),  -- Darker green for secondary elements
+
+    SliderBackground = Color3.fromRGB(0, 255, 50),  -- Neon toxic green
+    SliderProgress = Color3.fromRGB(100, 255, 100),  -- Lighter, glowing green
+    SliderStroke = Color3.fromRGB(0, 150, 0),  -- Dark green for stroke
+
+    ToggleBackground = Color3.fromRGB(50, 255, 50),  -- Bright toxic green base for toggle
+    ToggleEnabled = Color3.fromRGB(0, 255, 0),  -- Glowing neon green for enabled
+    ToggleDisabled = Color3.fromRGB(50, 50, 50),  -- Dark greyish green for disabled
+    ToggleEnabledStroke = Color3.fromRGB(0, 255, 0),  -- Neon green for stroke
+    ToggleDisabledStroke = Color3.fromRGB(0, 50, 0),  -- Dark green for disabled stroke
+    ToggleEnabledOuterStroke = Color3.fromRGB(0, 255, 0),  -- Brighter glow for enabled
+    ToggleDisabledOuterStroke = Color3.fromRGB(0, 100, 0),  -- Darker glow for disabled
+
+    DropdownSelected = Color3.fromRGB(50, 255, 50),  -- Toxic lime green selection
+    DropdownUnselected = Color3.fromRGB(0, 255, 0),  -- Slightly lighter green when unselected
+
+    InputBackground = Color3.fromRGB(50, 255, 50),  -- Bright neon green input background
+    InputStroke = Color3.fromRGB(0, 100, 0),  -- Dark green stroke for input fields
+    PlaceholderColor = Color3.fromRGB(100, 255, 100),  -- Faded, toxic yellow-green for placeholders
+}
+
+STONE = {
+    TextColor = Color3.fromRGB(150, 150, 150),  -- Light gray text color, neutral and stone-like
+
+    Background = Color3.fromRGB(60, 60, 60),  -- Dark stone gray, resembles weathered rock
+    Topbar = Color3.fromRGB(100, 100, 100),  -- Medium gray with a slightly rough texture
+    Shadow = Color3.fromRGB(30, 30, 30),  -- Deep charcoal gray, like shadowed stone cracks
+
+    NotificationBackground = Color3.fromRGB(120, 120, 120),  -- Light stone gray for notifications
+    NotificationActionsBackground = Color3.fromRGB(90, 90, 90),  -- Slightly darker gray
+
+    TabBackground = Color3.fromRGB(80, 80, 80),  -- Solid, medium gray for tabs
+    TabStroke = Color3.fromRGB(50, 50, 50),  -- Darker gray for the tab stroke, like stone edges
+    TabBackgroundSelected = Color3.fromRGB(120, 120, 120),  -- Lighter gray for selected tabs
+    TabTextColor = Color3.fromRGB(200, 200, 200),  -- Pale stone gray for text
+    SelectedTabTextColor = Color3.fromRGB(255, 255, 255),  -- Bright white for selected tab text
+
+    ElementBackground = Color3.fromRGB(120, 120, 120),  -- Light stone gray for elements
+    ElementBackgroundHover = Color3.fromRGB(150, 150, 150),  -- Slightly lighter gray when hovered
+    SecondaryElementBackground = Color3.fromRGB(110, 110, 110),  -- Muted stone gray for secondary elements
+    ElementStroke = Color3.fromRGB(80, 80, 80),  -- Darker gray for the element stroke
+    SecondaryElementStroke = Color3.fromRGB(60, 60, 60),  -- Darker gray for secondary element stroke
+
+    SliderBackground = Color3.fromRGB(80, 80, 80),  -- Dark stone gray for slider background
+    SliderProgress = Color3.fromRGB(120, 120, 120),  -- Lighter gray to indicate progress
+    SliderStroke = Color3.fromRGB(100, 100, 100),  -- Mid-tone gray for slider stroke
+
+    ToggleBackground = Color3.fromRGB(90, 90, 90),  -- Subtle stone gray for the toggle base
+    ToggleEnabled = Color3.fromRGB(150, 150, 150),  -- Lighter gray for enabled toggle
+    ToggleDisabled = Color3.fromRGB(50, 50, 50),  -- Darker gray for disabled toggle
+    ToggleEnabledStroke = Color3.fromRGB(120, 120, 120),  -- Medium stone gray for enabled toggle stroke
+    ToggleDisabledStroke = Color3.fromRGB(30, 30, 30),  -- Darker, muted stroke for disabled toggle
+    ToggleEnabledOuterStroke = Color3.fromRGB(140, 140, 140),  -- Light gray glow for enabled
+    ToggleDisabledOuterStroke = Color3.fromRGB(60, 60, 60),  -- Darker glow for disabled
+
+    DropdownSelected = Color3.fromRGB(120, 120, 120),  -- Light gray selection for dropdown
+    DropdownUnselected = Color3.fromRGB(80, 80, 80),  -- Slightly darker gray when unselected
+
+    InputBackground = Color3.fromRGB(100, 100, 100),  -- Neutral stone gray for input background
+    InputStroke = Color3.fromRGB(60, 60, 60),  -- Darker gray stroke for input fields
+    PlaceholderColor = Color3.fromRGB(150, 150, 150),  -- Light gray placeholder text
+}
+
+RED = {
+    TextColor = Color3.fromRGB(200, 50, 50),  -- Deep red for text color
+
+    Background = Color3.fromRGB(80, 20, 20),  -- Dark brick red, like weathered stone
+    Topbar = Color3.fromRGB(150, 50, 50),  -- Medium red for the topbar
+    Shadow = Color3.fromRGB(60, 20, 20),  -- Deep maroon for shadowed areas
+
+    NotificationBackground = Color3.fromRGB(180, 60, 60),  -- Lighter red for notifications
+    NotificationActionsBackground = Color3.fromRGB(130, 40, 40),  -- Slightly darker red
+
+    TabBackground = Color3.fromRGB(120, 40, 40),  -- Rich red for tabs
+    TabStroke = Color3.fromRGB(80, 20, 20),  -- Darker red for tab strokes
+    TabBackgroundSelected = Color3.fromRGB(180, 60, 60),  -- Highlighted red for selected tab
+    TabTextColor = Color3.fromRGB(250, 100, 100),  -- Pale red for text
+    SelectedTabTextColor = Color3.fromRGB(255, 200, 200),  -- Light pinkish-red for selected tab text
+
+    ElementBackground = Color3.fromRGB(180, 60, 60),  -- Bright red for elements
+    ElementBackgroundHover = Color3.fromRGB(220, 80, 80),  -- Lighter red for hover
+    SecondaryElementBackground = Color3.fromRGB(170, 50, 50),  -- Slightly darker red
+    ElementStroke = Color3.fromRGB(100, 30, 30),  -- Dark red for strokes
+
+    SliderBackground = Color3.fromRGB(120, 40, 40),  -- Rich red for slider background
+    SliderProgress = Color3.fromRGB(180, 60, 60),  -- Bright red for progress
+    SliderStroke = Color3.fromRGB(100, 30, 30),  -- Darker red for stroke
+
+    ToggleBackground = Color3.fromRGB(140, 50, 50),  -- Medium red base for toggle
+    ToggleEnabled = Color3.fromRGB(220, 80, 80),  -- Glowing red for enabled
+    ToggleDisabled = Color3.fromRGB(80, 20, 20),  -- Darker red for disabled
+    ToggleEnabledStroke = Color3.fromRGB(180, 60, 60),  -- Highlighted red stroke
+    ToggleDisabledStroke = Color3.fromRGB(50, 10, 10),  -- Muted dark red for disabled
+    ToggleEnabledOuterStroke = Color3.fromRGB(230, 90, 90),  -- Light red outer glow for enabled
+    ToggleDisabledOuterStroke = Color3.fromRGB(60, 20, 20),  -- Darker red for disabled outer stroke
+
+    DropdownSelected = Color3.fromRGB(180, 60, 60),  -- Bright red selection
+    DropdownUnselected = Color3.fromRGB(120, 40, 40),  -- Slightly darker red for unselected
+
+    InputBackground = Color3.fromRGB(140, 50, 50),  -- Subtle red for input background
+    InputStroke = Color3.fromRGB(90, 30, 30),  -- Dark red stroke for input fields
+    PlaceholderColor = Color3.fromRGB(220, 80, 80),  -- Light red for placeholders
+}
+
+BLUE = {
+    TextColor = Color3.fromRGB(50, 150, 250),  -- Bright blue text color
+
+    Background = Color3.fromRGB(20, 40, 80),  -- Dark ocean blue for the background
+    Topbar = Color3.fromRGB(60, 120, 200),  -- Medium blue for the topbar
+    Shadow = Color3.fromRGB(10, 20, 40),  -- Deep navy blue for shadowed areas
+
+    NotificationBackground = Color3.fromRGB(80, 160, 240),  -- Light blue for notifications
+    NotificationActionsBackground = Color3.fromRGB(40, 80, 160),  -- Slightly darker blue
+
+    TabBackground = Color3.fromRGB(60, 120, 200),  -- Rich blue for tabs
+    TabStroke = Color3.fromRGB(30, 60, 120),  -- Darker blue for the tab stroke
+    TabBackgroundSelected = Color3.fromRGB(100, 180, 255),  -- Highlighted light blue for selected tab
+    TabTextColor = Color3.fromRGB(180, 220, 255),  -- Light blue for text
+    SelectedTabTextColor = Color3.fromRGB(255, 255, 255),  -- Bright white for selected tab text
+
+    ElementBackground = Color3.fromRGB(100, 180, 255),  -- Light sky blue for elements
+    ElementBackgroundHover = Color3.fromRGB(120, 200, 255),  -- Brighter blue for hover
+    SecondaryElementBackground = Color3.fromRGB(80, 160, 240),  -- Medium blue for secondary elements
+    ElementStroke = Color3.fromRGB(40, 80, 160),  -- Darker blue for strokes
+
+    SliderBackground = Color3.fromRGB(60, 120, 200),  -- Rich blue for slider background
+    SliderProgress = Color3.fromRGB(100, 180, 255),  -- Light blue for progress
+    SliderStroke = Color3.fromRGB(30, 60, 120),  -- Darker blue for stroke
+
+    ToggleBackground = Color3.fromRGB(80, 160, 240),  -- Soft blue base for the toggle
+    ToggleEnabled = Color3.fromRGB(100, 180, 255),  -- Glowing light blue for enabled
+    ToggleDisabled = Color3.fromRGB(20, 40, 80),  -- Darker navy for disabled toggle
+    ToggleEnabledStroke = Color3.fromRGB(120, 200, 255),  -- Bright blue stroke for enabled toggle
+    ToggleDisabledStroke = Color3.fromRGB(10, 20, 40),  -- Dark blue stroke for disabled toggle
+    ToggleEnabledOuterStroke = Color3.fromRGB(140, 220, 255),  -- Brighter outer glow for enabled
+    ToggleDisabledOuterStroke = Color3.fromRGB(40, 80, 160),  -- Darker outer glow for disabled
+
+    DropdownSelected = Color3.fromRGB(100, 180, 255),  -- Light blue selection for dropdown
+    DropdownUnselected = Color3.fromRGB(60, 120, 200),  -- Medium blue for unselected
+
+    InputBackground = Color3.fromRGB(80, 160, 240),  -- Soft blue for input background
+    InputStroke = Color3.fromRGB(40, 80, 160),  -- Dark blue stroke for input fields
+    PlaceholderColor = Color3.fromRGB(120, 200, 255),  -- Pale blue for placeholders
+}
+
+WHITE = {
+    TextColor = Color3.fromRGB(240, 240, 240),  -- Soft white text color
+
+    Background = Color3.fromRGB(245, 245, 245),  -- Very light gray, close to white
+    Topbar = Color3.fromRGB(220, 220, 220),  -- Light gray for topbar
+    Shadow = Color3.fromRGB(180, 180, 180),  -- Subtle shadowed gray for stone-like effect
+
+    NotificationBackground = Color3.fromRGB(255, 255, 255),  -- Pure white for notifications
+    NotificationActionsBackground = Color3.fromRGB(240, 240, 240),  -- Soft gray
+
+    TabBackground = Color3.fromRGB(255, 255, 255),  -- White for tab backgrounds
+    TabStroke = Color3.fromRGB(200, 200, 200),  -- Light gray stroke for tabs
+    TabBackgroundSelected = Color3.fromRGB(230, 230, 230),  -- Slightly darker white for selected tabs
+    TabTextColor = Color3.fromRGB(100, 100, 100),  -- Gray text for tabs
+    SelectedTabTextColor = Color3.fromRGB(0, 0, 0),  -- Black for selected tab text
+
+    ElementBackground = Color3.fromRGB(255, 255, 255),  -- White for elements
+    ElementBackgroundHover = Color3.fromRGB(240, 240, 240),  -- Light gray for hover
+    SecondaryElementBackground = Color3.fromRGB(230, 230, 230),  -- Light gray for secondary elements
+    ElementStroke = Color3.fromRGB(200, 200, 200),  -- Light gray for strokes
+
+    SliderBackground = Color3.fromRGB(240, 240, 240),  -- Light gray for slider background
+    SliderProgress = Color3.fromRGB(255, 255, 255),  -- White for progress
+    SliderStroke = Color3.fromRGB(220, 220, 220),  -- Subtle gray for slider stroke
+
+    ToggleBackground = Color3.fromRGB(240, 240, 240),  -- Light gray base for toggle
+    ToggleEnabled = Color3.fromRGB(255, 255, 255),  -- Bright white for enabled toggle
+    ToggleDisabled = Color3.fromRGB(200, 200, 200),  -- Soft gray for disabled toggle
+    ToggleEnabledStroke = Color3.fromRGB(240, 240, 240),  -- Light gray stroke for enabled
+    ToggleDisabledStroke = Color3.fromRGB(160, 160, 160),  -- Darker gray for disabled stroke
+    ToggleEnabledOuterStroke = Color3.fromRGB(255, 255, 255),  -- Glowing white for enabled
+    ToggleDisabledOuterStroke = Color3.fromRGB(180, 180, 180),  -- Faint glow for disabled
+
+    DropdownSelected = Color3.fromRGB(230, 230, 230),  -- Light gray selection
+    DropdownUnselected = Color3.fromRGB(245, 245, 245),  -- Almost white for unselected
+
+    InputBackground = Color3.fromRGB(255, 255, 255),  -- White for input fields
+    InputStroke = Color3.fromRGB(230, 230, 230),  -- Subtle gray for stroke
+    PlaceholderColor = Color3.fromRGB(200, 200, 200),  -- Light gray for placeholders
+}
+
+DARK_BLUE_WHITE = {
+    TextColor = Color3.fromRGB(180, 200, 255),  -- Soft light blue with a hint of white for text
+
+    Background = Color3.fromRGB(30, 50, 80),  -- Dark navy with hints of blue and white
+    Topbar = Color3.fromRGB(80, 100, 160),  -- Medium blue with white undertones
+    Shadow = Color3.fromRGB(10, 20, 40),  -- Deep dark blue for shadows
+
+    NotificationBackground = Color3.fromRGB(120, 150, 240),  -- Soft blue for notifications
+    NotificationActionsBackground = Color3.fromRGB(80, 100, 160),  -- Slightly darker blue
+
+    TabBackground = Color3.fromRGB(60, 80, 140),  -- Dark blue with light accents for tabs
+    TabStroke = Color3.fromRGB(30, 40, 60),  -- Deep dark blue for strokes
+    TabBackgroundSelected = Color3.fromRGB(100, 120, 200),  -- Lighter blue for selected tabs
+    TabTextColor = Color3.fromRGB(230, 240, 255),  -- Very light blue for text
+    SelectedTabTextColor = Color3.fromRGB(255, 255, 255),  -- Bright white for selected tab text
+
+    ElementBackground = Color3.fromRGB(100, 120, 200),  -- Soft blue for elements
+    ElementBackgroundHover = Color3.fromRGB(120, 140, 220),  -- Slightly lighter blue on hover
+    SecondaryElementBackground = Color3.fromRGB(80, 100, 160),  -- Medium blue for secondary elements
+    ElementStroke = Color3.fromRGB(50, 60, 100),  -- Dark blue stroke for elements
+
+    SliderBackground = Color3.fromRGB(60, 80, 140),  -- Dark blue for slider background
+    SliderProgress = Color3.fromRGB(100, 120, 200),  -- Brighter blue for progress
+    SliderStroke = Color3.fromRGB(40, 50, 80),  -- Darker blue for stroke
+
+    ToggleBackground = Color3.fromRGB(80, 100, 160),  -- Blue toggle base
+    ToggleEnabled = Color3.fromRGB(120, 140, 220),  -- Light blue for enabled toggle
+    ToggleDisabled = Color3.fromRGB(30, 40, 60),  -- Dark navy for disabled toggle
+    ToggleEnabledStroke = Color3.fromRGB(100, 120, 200),  -- Medium blue for enabled toggle
+    ToggleDisabledStroke = Color3.fromRGB(20, 30, 50),  -- Dark stroke for disabled toggle
+    ToggleEnabledOuterStroke = Color3.fromRGB(140, 160, 240),  -- Bright blue outer glow for enabled
+    ToggleDisabledOuterStroke = Color3.fromRGB(40, 50, 80),  -- Darker outer glow for disabled
+
+    DropdownSelected = Color3.fromRGB(120, 140, 220),  -- Light blue selection
+    DropdownUnselected = Color3.fromRGB(80, 100, 160),  -- Medium blue for unselected
+
+    InputBackground = Color3.fromRGB(100, 120, 200),  -- Soft blue for input fields
+    InputStroke = Color3.fromRGB(50, 60, 100),  -- Darker blue stroke for input
+    PlaceholderColor = Color3.fromRGB(200, 220, 255),  -- Light blue for placeholders
+}
+
+BLACK = {
+    TextColor = Color3.fromRGB(220, 220, 220),  -- Light grayish white for text
+
+    Background = Color3.fromRGB(20, 20, 20),  -- Deep black background
+    Topbar = Color3.fromRGB(40, 40, 40),  -- Subtle dark gray topbar
+    Shadow = Color3.fromRGB(0, 0, 0),  -- Pure black for shadow effects
+
+    NotificationBackground = Color3.fromRGB(80, 80, 80),  -- Dark gray for notifications
+    NotificationActionsBackground = Color3.fromRGB(60, 60, 60),  -- Slightly darker gray
+
+    TabBackground = Color3.fromRGB(50, 50, 50),  -- Black for tab backgrounds
+    TabStroke = Color3.fromRGB(30, 30, 30),  -- Darker black for tab strokes
+    TabBackgroundSelected = Color3.fromRGB(80, 80, 80),  -- Dark gray for selected tabs
+    TabTextColor = Color3.fromRGB(240, 240, 240),  -- Light gray text color
+    SelectedTabTextColor = Color3.fromRGB(255, 255, 255),  -- Pure white text for selected tabs
+
+    ElementBackground = Color3.fromRGB(60, 60, 60),  -- Dark gray elements
+    ElementBackgroundHover = Color3.fromRGB(80, 80, 80),  -- Darker gray on hover
+    SecondaryElementBackground = Color3.fromRGB(50, 50, 50),  -- Very dark gray for secondary elements
+    ElementStroke = Color3.fromRGB(30, 30, 30),  -- Black stroke for elements
+
+    SliderBackground = Color3.fromRGB(40, 40, 40),  -- Dark black-gray slider background
+    SliderProgress = Color3.fromRGB(60, 60, 60),  -- Darker progress bar
+    SliderStroke = Color3.fromRGB(20, 20, 20),  -- Very dark stroke for the slider
+
+    ToggleBackground = Color3.fromRGB(50, 50, 50),  -- Grayish black for the toggle
+    ToggleEnabled = Color3.fromRGB(80, 80, 80),  -- Dark gray for the enabled toggle
+    ToggleDisabled = Color3.fromRGB(20, 20, 20),  -- Almost pure black for disabled toggle
+    ToggleEnabledStroke = Color3.fromRGB(90, 90, 90),  -- Lighter stroke for enabled toggle
+    ToggleDisabledStroke = Color3.fromRGB(10, 10, 10),  -- Dark stroke for disabled toggle
+    ToggleEnabledOuterStroke = Color3.fromRGB(100, 100, 100),  -- Light gray for enabled toggle outer glow
+    ToggleDisabledOuterStroke = Color3.fromRGB(30, 30, 30),  -- Darker glow for disabled outer stroke
+
+    DropdownSelected = Color3.fromRGB(80, 80, 80),  -- Dark gray selection for dropdown
+    DropdownUnselected = Color3.fromRGB(50, 50, 50),  -- Very dark gray for unselected
+
+    InputBackground = Color3.fromRGB(60, 60, 60),  -- Dark background for inputs
+    InputStroke = Color3.fromRGB(30, 30, 30),  -- Deep black stroke for inputs
+    PlaceholderColor = Color3.fromRGB(180, 180, 180),  -- Light gray placeholder text
+}
+
+PINK = {
+    TextColor = Color3.fromRGB(255, 105, 180),  -- Soft, bright pink for text
+
+    Background = Color3.fromRGB(180, 50, 100),  -- Deep rose pink for background
+    Topbar = Color3.fromRGB(255, 90, 180),  -- Medium pink for the topbar
+    Shadow = Color3.fromRGB(120, 30, 70),  -- Darker magenta shadow effects
+
+    NotificationBackground = Color3.fromRGB(255, 130, 200),  -- Lighter pink for notifications
+    NotificationActionsBackground = Color3.fromRGB(220, 90, 150),  -- Slightly darker pink
+
+    TabBackground = Color3.fromRGB(200, 60, 120),  -- Bold pink for tab backgrounds
+    TabStroke = Color3.fromRGB(150, 50, 100),  -- Darker pink stroke for tabs
+    TabBackgroundSelected = Color3.fromRGB(255, 130, 200),  -- Soft pink for selected tabs
+    TabTextColor = Color3.fromRGB(255, 180, 220),  -- Light pink for text
+    SelectedTabTextColor = Color3.fromRGB(255, 240, 255),  -- Very light pink for selected tab text
+
+    ElementBackground = Color3.fromRGB(255, 130, 200),  -- Bright pink for elements
+    ElementBackgroundHover = Color3.fromRGB(255, 150, 220),  -- Lighter pink for hover effects
+    SecondaryElementBackground = Color3.fromRGB(240, 110, 180),  -- Muted pink for secondary elements
+    ElementStroke = Color3.fromRGB(150, 50, 100),  -- Darker pink stroke for elements
+
+    SliderBackground = Color3.fromRGB(220, 90, 150),  -- Pinkish red for slider background
+    SliderProgress = Color3.fromRGB(255, 130, 200),  -- Lighter pink for progress
+    SliderStroke = Color3.fromRGB(200, 70, 120),  -- Darker pink stroke for slider
+
+    ToggleBackground = Color3.fromRGB(240, 110, 180),  -- Soft pink for toggle background
+    ToggleEnabled = Color3.fromRGB(255, 180, 220),  -- Glowing pink for enabled toggle
+    ToggleDisabled = Color3.fromRGB(160, 40, 80),  -- Darker pink for disabled toggle
+    ToggleEnabledStroke = Color3.fromRGB(255, 150, 220),  -- Bright pink stroke for enabled toggle
+    ToggleDisabledStroke = Color3.fromRGB(130, 30, 60),  -- Muted dark pink for disabled toggle
+    ToggleEnabledOuterStroke = Color3.fromRGB(255, 200, 255),  -- Glowing light pink for enabled
+    ToggleDisabledOuterStroke = Color3.fromRGB(160, 50, 100),  -- Subdued pink outer glow for disabled toggle
+
+    DropdownSelected = Color3.fromRGB(255, 150, 220),  -- Soft pink selection for dropdown
+    DropdownUnselected = Color3.fromRGB(200, 60, 120),  -- Darker pink for unselected
+
+    InputBackground = Color3.fromRGB(255, 180, 220),  -- Bright pink input background
+    InputStroke = Color3.fromRGB(150, 50, 100),  -- Darker pink stroke for input fields
+    PlaceholderColor = Color3.fromRGB(255, 200, 240),  -- Light pink for placeholders
+}
+
+OldFilm = {
+    TextColor = Color3.fromRGB(240, 240, 240),  -- Light gray for text, evoking old film style
+
+    Background = Color3.fromRGB(20, 20, 20),  -- Deep black for the background, like old film grain
+    Topbar = Color3.fromRGB(60, 60, 60),  -- Medium gray for the topbar
+    Shadow = Color3.fromRGB(10, 10, 10),  -- Darker black for shadowed areas, mimicking film grain
+
+    NotificationBackground = Color3.fromRGB(255, 255, 255),  -- Bright white for notifications
+    NotificationActionsBackground = Color3.fromRGB(230, 230, 230),  -- Soft gray for action areas
+
+    TabBackground = Color3.fromRGB(40, 40, 40),  -- Dark gray for tab background
+    TabStroke = Color3.fromRGB(20, 20, 20),  -- Almost black for tab stroke
+    TabBackgroundSelected = Color3.fromRGB(120, 120, 120),  -- Light gray for selected tab background
+    TabTextColor = Color3.fromRGB(220, 220, 220),  -- Pale gray for text
+    SelectedTabTextColor = Color3.fromRGB(255, 255, 255),  -- Bright white for selected tab text
+
+    ElementBackground = Color3.fromRGB(50, 50, 50),  -- Subtle dark gray for elements
+    ElementBackgroundHover = Color3.fromRGB(80, 80, 80),  -- Lighter gray when hovered
+    SecondaryElementBackground = Color3.fromRGB(60, 60, 60),  -- Muted gray for secondary elements
+    ElementStroke = Color3.fromRGB(30, 30, 30),  -- Dark stroke for elements, like aged film
+
+    SliderBackground = Color3.fromRGB(40, 40, 40),  -- Dark gray slider background
+    SliderProgress = Color3.fromRGB(100, 100, 100),  -- Lighter gray for progress
+    SliderStroke = Color3.fromRGB(20, 20, 20),  -- Darker gray stroke for slider
+
+    ToggleBackground = Color3.fromRGB(60, 60, 60),  -- Soft gray for toggle base
+    ToggleEnabled = Color3.fromRGB(100, 100, 100),  -- Light gray for enabled toggle
+    ToggleDisabled = Color3.fromRGB(30, 30, 30),  -- Darker gray for disabled toggle
+    ToggleEnabledStroke = Color3.fromRGB(80, 80, 80),  -- Medium gray stroke for enabled toggle
+    ToggleDisabledStroke = Color3.fromRGB(20, 20, 20),  -- Very dark gray stroke for disabled toggle
+    ToggleEnabledOuterStroke = Color3.fromRGB(120, 120, 120),  -- Light gray glow for enabled
+    ToggleDisabledOuterStroke = Color3.fromRGB(40, 40, 40),  -- Subdued dark glow for disabled toggle
+
+    DropdownSelected = Color3.fromRGB(100, 100, 100),  -- Soft gray for selected dropdown
+    DropdownUnselected = Color3.fromRGB(40, 40, 40),  -- Dark gray for unselected
+
+    InputBackground = Color3.fromRGB(40, 40, 40),  -- Dark background for input fields
+    InputStroke = Color3.fromRGB(20, 20, 20),  -- Darker stroke for input fields
+    PlaceholderColor = Color3.fromRGB(180, 180, 180),  -- Light gray placeholder text
+}
+
+AntiPhotosensitivity = {
+    TextColor = Color3.fromRGB(180, 180, 180),  -- Soft gray text for easy readability without harsh contrast
+
+    Background = Color3.fromRGB(240, 240, 240),  -- Very light gray background to avoid high contrast
+    Topbar = Color3.fromRGB(220, 220, 220),  -- Subtle grayish-blue for the topbar
+    Shadow = Color3.fromRGB(180, 180, 180),  -- Gentle shadow effects for depth
+
+    NotificationBackground = Color3.fromRGB(230, 230, 230),  -- Soft gray for notifications
+    NotificationActionsBackground = Color3.fromRGB(215, 215, 215),  -- Light gray for action areas
+
+    TabBackground = Color3.fromRGB(210, 210, 210),  -- Soft gray for tab background
+    TabStroke = Color3.fromRGB(180, 180, 180),  -- Muted gray stroke for tabs
+    TabBackgroundSelected = Color3.fromRGB(230, 230, 230),  -- Light gray for selected tab
+    TabTextColor = Color3.fromRGB(150, 150, 150),  -- Soft gray for tab text
+    SelectedTabTextColor = Color3.fromRGB(170, 170, 170),  -- Lighter gray for selected tab text
+
+    ElementBackground = Color3.fromRGB(220, 220, 220),  -- Soft light gray for elements
+    ElementBackgroundHover = Color3.fromRGB(210, 210, 210),  -- Slightly darker gray on hover
+    SecondaryElementBackground = Color3.fromRGB(200, 200, 200),  -- Light gray for secondary elements
+    ElementStroke = Color3.fromRGB(160, 160, 160),  -- Muted gray stroke for elements
+
+    SliderBackground = Color3.fromRGB(210, 210, 210),  -- Light gray slider background
+    SliderProgress = Color3.fromRGB(190, 190, 190),  -- Subtle gray for progress
+    SliderStroke = Color3.fromRGB(160, 160, 160),  -- Soft gray stroke for slider
+
+    ToggleBackground = Color3.fromRGB(220, 220, 220),  -- Light gray toggle background
+    ToggleEnabled = Color3.fromRGB(190, 190, 190),  -- Slightly darker gray for enabled toggle
+    ToggleDisabled = Color3.fromRGB(150, 150, 150),  -- Muted gray for disabled toggle
+    ToggleEnabledStroke = Color3.fromRGB(200, 200, 200),  -- Soft gray stroke for enabled toggle
+    ToggleDisabledStroke = Color3.fromRGB(130, 130, 130),  -- Darker gray stroke for disabled toggle
+    ToggleEnabledOuterStroke = Color3.fromRGB(210, 210, 210),  -- Light gray outer glow for enabled
+    ToggleDisabledOuterStroke = Color3.fromRGB(140, 140, 140),  -- Subtle gray glow for disabled toggle
+
+    DropdownSelected = Color3.fromRGB(210, 210, 210),  -- Soft gray selection for dropdown
+    DropdownUnselected = Color3.fromRGB(190, 190, 190),  -- Slightly darker gray for unselected
+
+    InputBackground = Color3.fromRGB(240, 240, 240),  -- Light gray for input fields
+    InputStroke = Color3.fromRGB(180, 180, 180),  -- Soft gray stroke for input fields
+    PlaceholderColor = Color3.fromRGB(200, 200, 200),  -- Light gray for placeholders
+}
+
+AntiColorblind = {
+    TextColor = Color3.fromRGB(0, 0, 0),  -- Black text for maximum contrast
+
+    Background = Color3.fromRGB(255, 255, 255),  -- Pure white background for clarity
+    Topbar = Color3.fromRGB(0, 0, 255),  -- Bright blue for topbar to ensure visibility
+    Shadow = Color3.fromRGB(50, 50, 50),  -- Dark gray for shadows to avoid harshness
+
+    NotificationBackground = Color3.fromRGB(255, 255, 200),  -- Soft yellow for notifications (not red)
+    NotificationActionsBackground = Color3.fromRGB(200, 200, 0),  -- Bright yellow for action areas
+
+    TabBackground = Color3.fromRGB(0, 0, 255),  -- Blue background for tabs
+    TabStroke = Color3.fromRGB(255, 255, 0),  -- Yellow stroke for tabs to make them stand out
+    TabBackgroundSelected = Color3.fromRGB(0, 0, 200),  -- Darker blue for selected tab
+    TabTextColor = Color3.fromRGB(255, 255, 255),  -- White text for tabs
+    SelectedTabTextColor = Color3.fromRGB(255, 255, 255),  -- White text for selected tab
+
+    ElementBackground = Color3.fromRGB(0, 0, 255),  -- Blue background for elements
+    ElementBackgroundHover = Color3.fromRGB(0, 0, 200),  -- Darker blue for hover effects
+    SecondaryElementBackground = Color3.fromRGB(255, 255, 0),  -- Yellow for secondary elements
+    ElementStroke = Color3.fromRGB(255, 255, 0),  -- Yellow stroke for elements
+
+    SliderBackground = Color3.fromRGB(0, 0, 255),  -- Blue slider background
+    SliderProgress = Color3.fromRGB(255, 255, 0),  -- Yellow progress for easy tracking
+    SliderStroke = Color3.fromRGB(0, 0, 200),  -- Dark blue stroke for slider
+
+    ToggleBackground = Color3.fromRGB(0, 0, 255),  -- Blue base for toggle
+    ToggleEnabled = Color3.fromRGB(0, 0, 255),  -- Blue for enabled toggle
+    ToggleDisabled = Color3.fromRGB(100, 100, 100),  -- Gray for disabled toggle
+    ToggleEnabledStroke = Color3.fromRGB(255, 255, 0),  -- Yellow stroke for enabled toggle
+    ToggleDisabledStroke = Color3.fromRGB(150, 150, 150),  -- Gray stroke for disabled toggle
+    ToggleEnabledOuterStroke = Color3.fromRGB(0, 0, 200),  -- Dark blue glow for enabled
+    ToggleDisabledOuterStroke = Color3.fromRGB(50, 50, 50),  -- Dark gray glow for disabled
+
+    DropdownSelected = Color3.fromRGB(0, 0, 255),  -- Blue selection for dropdown
+    DropdownUnselected = Color3.fromRGB(255, 255, 0),  -- Yellow for unselected dropdown
+
+    InputBackground = Color3.fromRGB(255, 255, 255),  -- White input background
+    InputStroke = Color3.fromRGB(0, 0, 255),  -- Blue stroke for input fields
+    PlaceholderColor = Color3.fromRGB(255, 255, 200),  -- Soft yellow for placeholders
+}
+
+HighContrast = {
+    TextColor = Color3.fromRGB(255, 255, 255),  -- Bright white text for high contrast
+
+    Background = Color3.fromRGB(0, 0, 0),  -- Black background for contrast
+    Topbar = Color3.fromRGB(255, 255, 0),  -- Bright yellow for topbar
+    Shadow = Color3.fromRGB(50, 50, 50),  -- Dark gray for shadow
+
+    NotificationBackground = Color3.fromRGB(255, 255, 0),  -- Yellow for notifications
+    NotificationActionsBackground = Color3.fromRGB(255, 0, 0),  -- Bright red for actions (non-confusing for colorblind users)
+
+    TabBackground = Color3.fromRGB(0, 0, 255),  -- Blue tab background
+    TabStroke = Color3.fromRGB(255, 0, 0),  -- Red stroke for tabs
+    TabBackgroundSelected = Color3.fromRGB(0, 255, 0),  -- Green for selected tab
+    TabTextColor = Color3.fromRGB(0, 0, 0),  -- Black text on tab
+    SelectedTabTextColor = Color3.fromRGB(255, 255, 255),  -- White text for selected tab
+
+    ElementBackground = Color3.fromRGB(0, 0, 255),  -- Blue background for elements
+    ElementBackgroundHover = Color3.fromRGB(255, 0, 0),  -- Red for hover effects
+    SecondaryElementBackground = Color3.fromRGB(255, 255, 0),  -- Yellow for secondary elements
+    ElementStroke = Color3.fromRGB(0, 0, 0),  -- Black stroke for elements
+
+    SliderBackground = Color3.fromRGB(0, 0, 255),  -- Blue slider background
+    SliderProgress = Color3.fromRGB(255, 255, 0),  -- Yellow progress bar
+    SliderStroke = Color3.fromRGB(255, 0, 0),  -- Red stroke for slider
+
+    ToggleBackground = Color3.fromRGB(0, 0, 255),  -- Blue toggle background
+    ToggleEnabled = Color3.fromRGB(0, 255, 0),  -- Green for enabled toggle
+    ToggleDisabled = Color3.fromRGB(50, 50, 50),  -- Dark gray for disabled toggle
+    ToggleEnabledStroke = Color3.fromRGB(255, 255, 0),  -- Yellow stroke for enabled toggle
+    ToggleDisabledStroke = Color3.fromRGB(0, 0, 0),  -- Black stroke for disabled toggle
+    ToggleEnabledOuterStroke = Color3.fromRGB(0, 255, 0),  -- Green glow for enabled toggle
+    ToggleDisabledOuterStroke = Color3.fromRGB(50, 50, 50),  -- Dark gray glow for disabled toggle
+
+    DropdownSelected = Color3.fromRGB(0, 0, 255),  -- Blue for selected dropdown
+    DropdownUnselected = Color3.fromRGB(255, 255, 0),  -- Yellow for unselected dropdown
+
+    InputBackground = Color3.fromRGB(255, 255, 255),  -- White background for input fields
+    InputStroke = Color3.fromRGB(0, 0, 0),  -- Black stroke for input fields
+    PlaceholderColor = Color3.fromRGB(255, 255, 0),  -- Yellow for placeholders
+}
+
+Monochrome = {
+    TextColor = Color3.fromRGB(255, 255, 255),  -- White text for maximum contrast
+
+    Background = Color3.fromRGB(0, 0, 0),  -- Black background for clear readability
+    Topbar = Color3.fromRGB(200, 200, 200),  -- Light gray for the topbar
+    Shadow = Color3.fromRGB(100, 100, 100),  -- Dark gray for shadow effects
+
+    NotificationBackground = Color3.fromRGB(220, 220, 220),  -- Light gray for notifications
+    NotificationActionsBackground = Color3.fromRGB(180, 180, 180),  -- Slightly darker gray for actions
+
+    TabBackground = Color3.fromRGB(150, 150, 150),  -- Medium gray for tabs
+    TabStroke = Color3.fromRGB(100, 100, 100),  -- Dark gray stroke for tabs
+    TabBackgroundSelected = Color3.fromRGB(200, 200, 200),  -- Lighter gray for selected tab
+    TabTextColor = Color3.fromRGB(0, 0, 0),  -- Black text for tabs
+    SelectedTabTextColor = Color3.fromRGB(255, 255, 255),  -- White text for selected tab
+
+    ElementBackground = Color3.fromRGB(150, 150, 150),  -- Medium gray for elements
+    ElementBackgroundHover = Color3.fromRGB(200, 200, 200),  -- Lighter gray on hover
+    SecondaryElementBackground = Color3.fromRGB(100, 100, 100),  -- Darker gray for secondary elements
+    ElementStroke = Color3.fromRGB(80, 80, 80),  -- Very dark gray stroke for elements
+
+    SliderBackground = Color3.fromRGB(150, 150, 150),  -- Gray slider background
+    SliderProgress = Color3.fromRGB(200, 200, 200),  -- Lighter gray progress bar
+    SliderStroke = Color3.fromRGB(100, 100, 100),  -- Darker gray stroke for slider
+
+    ToggleBackground = Color3.fromRGB(150, 150, 150),  -- Gray toggle background
+    ToggleEnabled = Color3.fromRGB(200, 200, 200),  -- Light gray for enabled toggle
+    ToggleDisabled = Color3.fromRGB(50, 50, 50),  -- Very dark gray for disabled toggle
+    ToggleEnabledStroke = Color3.fromRGB(255, 255, 255),  -- White stroke for enabled toggle
+    ToggleDisabledStroke = Color3.fromRGB(0, 0, 0),  -- Black stroke for disabled toggle
+    ToggleEnabledOuterStroke = Color3.fromRGB(200, 200, 200),  -- Soft gray outer glow for enabled
+    ToggleDisabledOuterStroke = Color3.fromRGB(50, 50, 50),  -- Dark gray outer glow for disabled toggle
+
+    DropdownSelected = Color3.fromRGB(200, 200, 200),  -- Light gray for selected dropdown
+    DropdownUnselected = Color3.fromRGB(100, 100, 100),  -- Dark gray for unselected dropdown
+
+    InputBackground = Color3.fromRGB(255, 255, 255),  -- White input background
+    InputStroke = Color3.fromRGB(0, 0, 0),  -- Black stroke for input fields
+    PlaceholderColor = Color3.fromRGB(180, 180, 180),  -- Light gray for placeholders
+}
+
+EyeStrain25 = {
+    TextColor = Color3.fromRGB(180, 180, 180),  -- Light gray text
+
+    Background = Color3.fromRGB(240, 240, 240),  -- Very light gray for background
+    Topbar = Color3.fromRGB(220, 220, 220),  -- Soft muted gray for the topbar
+    Shadow = Color3.fromRGB(200, 200, 200),  -- Subtle shadow
+
+    NotificationBackground = Color3.fromRGB(230, 230, 230),  -- Very light gray for notifications
+    NotificationActionsBackground = Color3.fromRGB(210, 210, 210),  -- Soft gray for actions
+
+    TabBackground = Color3.fromRGB(215, 215, 215),  -- Light gray for tab background
+    TabStroke = Color3.fromRGB(180, 180, 180),  -- Muted gray stroke for tabs
+    TabBackgroundSelected = Color3.fromRGB(225, 225, 225),  -- Very light gray for selected tab
+    TabTextColor = Color3.fromRGB(150, 150, 150),  -- Soft gray for tab text
+    SelectedTabTextColor = Color3.fromRGB(180, 180, 180),  -- Lighter gray for selected tab text
+
+    ElementBackground = Color3.fromRGB(225, 225, 225),  -- Soft gray for elements
+    ElementBackgroundHover = Color3.fromRGB(215, 215, 215),  -- Slightly darker gray on hover
+    SecondaryElementBackground = Color3.fromRGB(210, 210, 210),  -- Very light gray for secondary elements
+    ElementStroke = Color3.fromRGB(190, 190, 190),  -- Muted gray stroke for elements
+
+    SliderBackground = Color3.fromRGB(210, 210, 210),  -- Soft gray slider background
+    SliderProgress = Color3.fromRGB(220, 220, 220),  -- Slightly lighter gray for progress
+    SliderStroke = Color3.fromRGB(180, 180, 180),  -- Soft gray stroke for slider
+
+    ToggleBackground = Color3.fromRGB(220, 220, 220),  -- Light gray toggle background
+    ToggleEnabled = Color3.fromRGB(200, 200, 200),  -- Soft gray for enabled toggle
+    ToggleDisabled = Color3.fromRGB(150, 150, 150),  -- Darker gray for disabled toggle
+    ToggleEnabledStroke = Color3.fromRGB(210, 210, 210),  -- Light gray stroke for enabled toggle
+    ToggleDisabledStroke = Color3.fromRGB(140, 140, 140),  -- Muted gray stroke for disabled toggle
+    ToggleEnabledOuterStroke = Color3.fromRGB(225, 225, 225),  -- Very light gray outer glow for enabled
+    ToggleDisabledOuterStroke = Color3.fromRGB(160, 160, 160),  -- Subtle gray glow for disabled toggle
+
+    DropdownSelected = Color3.fromRGB(230, 230, 230),  -- Light gray for selected dropdown
+    DropdownUnselected = Color3.fromRGB(210, 210, 210),  -- Slightly darker gray for unselected dropdown
+
+    InputBackground = Color3.fromRGB(240, 240, 240),  -- Light gray input background
+    InputStroke = Color3.fromRGB(190, 190, 190),  -- Soft gray stroke for input fields
+    PlaceholderColor = Color3.fromRGB(200, 200, 200),  -- Light gray for placeholders
+}
 
 
 
+EyeStrain75 = {
+    TextColor = Color3.fromRGB(150, 150, 150),  -- Medium gray text for readability
+
+    Background = Color3.fromRGB(225, 225, 225),  -- Light gray background
+    Topbar = Color3.fromRGB(180, 180, 180),  -- Soft medium gray for topbar
+    Shadow = Color3.fromRGB(160, 160, 160),  -- Subtle shadow
+
+    NotificationBackground = Color3.fromRGB(210, 210, 210),  -- Light gray for notifications
+    NotificationActionsBackground = Color3.fromRGB(190, 190, 190),  -- Soft medium gray for actions
+
+    TabBackground = Color3.fromRGB(200, 200, 200),  -- Medium gray for tab background
+    TabStroke = Color3.fromRGB(160, 160, 160),  -- Darker gray for tab strokes
+    TabBackgroundSelected = Color3.fromRGB(220, 220, 220),  -- Lighter gray for selected tab
+    TabTextColor = Color3.fromRGB(140, 140, 140),  -- Slightly darker gray for tab text
+    SelectedTabTextColor = Color3.fromRGB(160, 160, 160),  -- Medium gray for selected tab text
+
+    ElementBackground = Color3.fromRGB(220, 220, 220),  -- Soft gray for elements
+    ElementBackgroundHover = Color3.fromRGB(210, 210, 210),  -- Slightly darker gray on hover
+    SecondaryElementBackground = Color3.fromRGB(200, 200, 200),  -- Medium gray for secondary elements
+    ElementStroke = Color3.fromRGB(180, 180, 180),  -- Medium gray stroke for elements
+
+    SliderBackground = Color3.fromRGB(200, 200, 200),  -- Medium gray slider background
+    SliderProgress = Color3.fromRGB(210, 210, 210),  -- Light gray progress bar
+    SliderStroke = Color3.fromRGB(180, 180, 180),  -- Medium gray stroke for slider
+
+    ToggleBackground = Color3.fromRGB(210, 210, 210),  -- Medium gray toggle background
+    ToggleEnabled = Color3.fromRGB(190, 190, 190),  -- Soft gray for enabled toggle
+    ToggleDisabled = Color3.fromRGB(140, 140, 140),  -- Darker gray for disabled toggle
+    ToggleEnabledStroke = Color3.fromRGB(200, 200, 200),  -- Light gray stroke for enabled toggle
+    ToggleDisabledStroke = Color3.fromRGB(130, 130, 130),  -- Muted gray stroke for disabled toggle
+    ToggleEnabledOuterStroke = Color3.fromRGB(220, 220, 220),  -- Light gray outer glow for enabled
+    ToggleDisabledOuterStroke = Color3.fromRGB(150, 150, 150),  -- Subtle gray glow for disabled toggle
+
+    DropdownSelected = Color3.fromRGB(210, 210, 210),  -- Light gray for selected dropdown
+    DropdownUnselected = Color3.fromRGB(190, 190, 190),  -- Medium gray for unselected dropdown
+
+    InputBackground = Color3.fromRGB(225, 225, 225),  -- Light gray input background
+    InputStroke = Color3.fromRGB(180, 180, 180),  -- Medium gray stroke for input fields
+    PlaceholderColor = Color3.fromRGB(200, 200, 200),  -- Soft gray for placeholders
+}
 
 
+EyeStrain100 = {
+    TextColor = Color3.fromRGB(100, 100, 100),  -- Standard dark gray text
 
+    Background = Color3.fromRGB(240, 240, 240),  -- Light gray background
+    Topbar = Color3.fromRGB(180, 180, 180),  -- Medium gray topbar
+    Shadow = Color3.fromRGB(140, 140, 140),  -- Soft shadow
 
+    NotificationBackground = Color3.fromRGB(220, 220, 220),  -- Light gray for notifications
+    NotificationActionsBackground = Color3.fromRGB(200, 200, 200),  -- Medium gray for actions
 
+    TabBackground = Color3.fromRGB(210, 210, 210),  -- Soft gray tab background
+    TabStroke = Color3.fromRGB(170, 170, 170),  -- Darker gray for tab stroke
+    TabBackgroundSelected = Color3.fromRGB(230, 230, 230),  -- Lighter gray for selected tab
+    TabTextColor = Color3.fromRGB(120, 120, 120),  -- Darker gray text for tabs
+    SelectedTabTextColor = Color3.fromRGB(140, 140, 140),  -- Medium gray text for selected tab
 
+    ElementBackground = Color3.fromRGB(230, 230, 230),  -- Soft gray for elements
+    ElementBackgroundHover = Color3.fromRGB(215, 215, 215),  -- Slightly darker gray on hover
+    SecondaryElementBackground = Color3.fromRGB(205, 205, 205),  -- Medium gray for secondary elements
+    ElementStroke = Color3.fromRGB(180, 180, 180),  -- Muted gray stroke for elements
 
+    SliderBackground = Color3.fromRGB(210, 210, 210),  -- Light gray slider background
+    SliderProgress = Color3.fromRGB(230, 230, 230),  -- Very light gray for progress
+    SliderStroke = Color3.fromRGB(180, 180, 180),  -- Gray stroke for slider
+
+    ToggleBackground = Color3.fromRGB(220, 220, 220),  -- Medium gray toggle background
+    ToggleEnabled = Color3.fromRGB(200, 200, 200),  -- Soft gray for enabled toggle
+    ToggleDisabled = Color3.fromRGB(150, 150, 150),  -- Darker gray for disabled toggle
+    ToggleEnabledStroke = Color3.fromRGB(210, 210, 210),  -- Light gray stroke for enabled toggle
+    ToggleDisabledStroke = Color3.fromRGB(130, 130, 130),  -- Muted gray stroke for disabled toggle
+    ToggleEnabledOuterStroke = Color3.fromRGB(230, 230, 230),  -- Soft gray outer glow for enabled
+    ToggleDisabledOuterStroke = Color3.fromRGB(160, 160, 160),  -- Subtle gray glow for disabled toggle
+
+    DropdownSelected = Color3.fromRGB(220, 220, 220),  -- Light gray for selected dropdown
+    DropdownUnselected = Color3.fromRGB(200, 200, 200),  -- Medium gray for unselected dropdown
+
+    InputBackground = Color3.fromRGB(240, 240, 240),  -- Light gray input background
+    InputStroke = Color3.fromRGB(180, 180, 180),  -- Soft gray stroke for input fields
+    PlaceholderColor = Color3.fromRGB(210, 210, 210),  -- Light gray for placeholders
+}
 
 
 
